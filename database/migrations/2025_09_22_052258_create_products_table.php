@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->text('description');
-            $table->text('image')->unique();
+            $table->string('image')->unique();
             $table->float('price');
             $table->timestamps();
         });
