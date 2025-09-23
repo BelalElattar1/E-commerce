@@ -10,4 +10,8 @@ class Order extends Model
         'totalPrice',
         'user_id'
     ];
+
+    public function orderVendors() {
+        return $this->hasMany(OrderVendor::class);
+    }
 }

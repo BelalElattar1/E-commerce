@@ -11,7 +11,10 @@ class OrderVendor extends Model
         'status',
         'vendor_id',
         'order_id',
-        'user_id',
-        'order_id'
+        'user_id'
     ];
+
+        public function orderDetails() {
+        return $this->hasMany(OrderDetail::class);
+    }
 }
